@@ -1,0 +1,27 @@
+<ion-view view-title="TokBox Sample">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="padding">
+            <div>
+                <button ng-click="disconnect()" class="button button-assertive">
+                   Disconnect Session
+                </button>
+            </div>
+        </div>
+        <div class="padding">
+            <div>
+                <button ng-click="publish()" class="button button-balanced">
+                    Publish Stream
+                </button>
+            </div>
+        </div>
+          <ot-layout props="{animate:true}">
+                <ot-subscriber ng-repeat="stream in streams" 
+                    stream="stream" 
+                    props="{style: {nameDisplayMode: 'off',width:'100%',height:'100%'}}">
+                </ot-subscriber>
+                <ot-publisher id="publisher" 
+                    props="{style: {nameDisplayMode: 'off'}, resolution: '1280x720', frameRate: 30,width:'100%',height:'100%'}">
+                </ot-publisher>
+            </ot-layout>
+    </ion-content>
+</ion-view>
