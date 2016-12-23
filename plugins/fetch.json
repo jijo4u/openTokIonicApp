@@ -55,5 +55,29 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-opentokjs": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-opentokjs"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-crosswalk-webview": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-crosswalk-webview"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-iosrtc": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-iosrtc"
+        },
+        "is_top_level": false,
+        "variables": {}
     }
 }
