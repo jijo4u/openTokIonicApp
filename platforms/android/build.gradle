@@ -22,7 +22,8 @@ apply plugin: 'com.android.application'
 buildscript {
     repositories {
         mavenCentral()
-        jcenter()
+        jcenter() 
+
     }
 
     // Switch the Android Gradle plugin version requirement depending on the
